@@ -31,8 +31,9 @@ def display_cart():
     print("  S.No.\t\tProducts\t\tQuantity\t\tTotal Price\n")
     for i in range(len(c)):
         print('   ',i+1,'\t\t',c[i],'\t\t\t ',cart[c[i]]['q'],'\t\t\t  ',cart[c[i]]['p'])
+        p=p+cart[c[i]]['p']
     print("\n\n==============================================================================\n\n")
-
+    print("\n\nYour final price is: Rs %d"%p)
 
 # Menu for management system
 
